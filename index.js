@@ -1,4 +1,5 @@
 // TODO: Include packages needed for this application
+/* inquirer will be necessary for the questions */
 
 // TODO: Create an array of questions for user input
 const questions = [
