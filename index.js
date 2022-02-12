@@ -13,7 +13,7 @@ const questions = [
         name: "description",
         message: "please type a brief description of your project."
     },
-    {
+    {       /* begin bullet point for description */
         type: "input",
         name: "motivation",
         message: "What was your motivation to make this?"
@@ -32,7 +32,7 @@ const questions = [
         type: "input",
         name: "learningCurve",
         message: "What problems did you encounter and how did you overcome them?"
-    },
+    } /* end bullet points for description */,
     {
         type: "input",
         name: "contentTable",
