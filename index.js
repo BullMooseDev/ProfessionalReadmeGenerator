@@ -1,5 +1,5 @@
 // TODO: Include packages needed for this application
-/* inquirer will be necessary for the questions */
+const inquirer = require('inquirer');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -89,10 +89,16 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+
+    /* create the readme file setup using the #, ##, ### methods */
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+/* use prompt.then style code
+catch errors and keep data inputed */
+}
 
 // Function call to initialize app
 init();
