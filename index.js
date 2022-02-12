@@ -167,10 +167,10 @@ function init() {
 
     inquirer
         .prompt([
-            /* Pass your questions in here */
+            /* Pass questions in here */
         ])
         .then((answers) => {
-            /* create readme files with input */
+            /* create readme files with user input*/
         })
         .catch((err) => {
             if (err) {
