@@ -158,7 +158,7 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-
+    `enter readme file setup`
     /* create the readme file setup using the #, ##, ### methods */
 }
 
