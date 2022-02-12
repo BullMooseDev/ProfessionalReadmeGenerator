@@ -1,3 +1,5 @@
+const generateReadme = require('../dist/utils/generate-readme');
+
 const reamdeTemplate = questionData => {
             `# ${projectname}
             ## ${description}
@@ -11,3 +13,5 @@ const reamdeTemplate = questionData => {
             ## ${howToContribute}
             ## ${tests}`;
 };
+
+module.exports('../dist/utils/generate-readme.js');

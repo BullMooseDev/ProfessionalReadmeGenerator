@@ -4,14 +4,13 @@ const fs = require('fs');
 const generateReadme = require('/src/readme-template');
 
 // TODO: Create an array of questions for user input
-const questions = questionData => {
-    console.log(` ADDING NEW README NOW`);
+const questions = () => {
+    console.log(` ADDING NEW README NOW `);
 
     if (!questionData) {
         questionData.newReadme = []
     }
-    return inquirer
-        .prompt([
+    return inquirer.prompt([
             {
                 name: "readmeTitle",
                 type: "input",
@@ -276,12 +275,8 @@ const questions = questionData => {
                     }
                 }
             },
-        ]);
+        ])
     };
-
-
-
-
 
 // TODO: Create a function to write README file
 function writeToFile(readmeFile) {
@@ -315,4 +310,8 @@ function writeToFile(readmeFile) {
                 };
 
                 // Function call to initialize app
-                init();
+                init()
+                .then(questions)
+                .then(questionData => {
+                    return generateReadme(questionData);
+                });
