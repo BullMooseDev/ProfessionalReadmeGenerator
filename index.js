@@ -37,7 +37,7 @@ const questions = [
         type: "input",
         name: "contentTable",
         message: "Please enter a table of contents."
-        /* make this a optional question */
+        /* make this a optional question / use confirm to determine if this is wanted? */
     },
     {
         type: "input",
@@ -54,6 +54,7 @@ const questions = [
         type: "input",
         name: "credits",
         message: "Please provide a brief list of your collaborators or teammembers. Also list any outside source help."
+        /* add a confirm to determine if this is wanted? */
     },
     {
         type: "input",
@@ -65,11 +66,6 @@ const questions = [
         ${renderLicenseSection(data.license, data.name)} \n
         `]
         }*/
-    },
-    {
-        type: "input",
-        name: "credits",
-        message: "Please provide a brief list of your collaborators or teammembers. Also list any outside source help."
     },
     {
         type: "input",
@@ -143,9 +139,10 @@ const questions = [
         } */
     },
     {
-        type: "input",
+        type: "list",
         name: "features",
-        message: "list the features of your project."
+        message: "list the features of your project.",
+        choices: ["HTML", "CSS", "JS", "Node", "ES6", "Bootstrap", "JQuery"]
     },
     {
         type: "input",
@@ -169,18 +166,18 @@ function writeToFile(fileName, data) {
 function init() {
 
     inquirer
-  .prompt([
-    /* Pass your questions in here */
-  ])
-  .then((answers) => {
-    /* create readme files with input variables */
-  })
-  .catch((err) => {
-    if (err) {
-        console.log(err);
-        return;
-    }
-  });
+        .prompt([
+            /* Pass your questions in here */
+        ])
+        .then((answers) => {
+            /* create readme files with input */
+        })
+        .catch((err) => {
+            if (err) {
+                console.log(err);
+                return;
+            }
+        });
 
     /* use prompt.then style code
     catch errors and keep data inputed */
