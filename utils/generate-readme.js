@@ -2,7 +2,7 @@ const fs = require('fs');
 
 const writeFile = readmeContent => {
     return new Promise((resolve, reject) => {
-      fs.writeFile('./dist/index.html', readmeContent, err => {
+      fs.writeFile('./dist/readme.md', readmeContent, err => {
         // if there's an error, reject the Promise and send the error to the Promise's `.catch()` method
         if (err) {
           reject(err);
@@ -19,4 +19,4 @@ const writeFile = readmeContent => {
     });
   };
 
-  module.exports = { writeFile};
+  module.exports = {writeFile};

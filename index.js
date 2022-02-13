@@ -28,11 +28,11 @@ const questions = () => {
             type: "input",
             name: "description",
             message: "please type a brief description of your project. (Required)",
-            validate: readmeTitleInput => {
-                if (readmeTitleInput) {
+            validate: descriptionInput => {
+                if (descriptionInput) {
                     return true;
                 } else {
-                    console.log('You need to enter a readme name!');
+                    console.log('You need to enter a description!');
                     return false;
                 }
             }
@@ -41,11 +41,11 @@ const questions = () => {
             type: "input",
             name: "motivation",
             message: "What was your motivation to make this? (Required)",
-            validate: readmeTitleInput => {
-                if (readmeTitleInput) {
+            validate: motivation => {
+                if (motivation) {
                     return true;
                 } else {
-                    console.log('You need to enter a readme name!');
+                    console.log('You need to enter your motivation!');
                     return false;
                 }
             }
@@ -54,11 +54,11 @@ const questions = () => {
             type: "input",
             name: "theBigWhy",
             message: "Why did you build this? (Required)",
-            validate: readmeTitleInput => {
-                if (readmeTitleInput) {
+            validate: theBigWhy => {
+                if (theBigWhy) {
                     return true;
                 } else {
-                    console.log('You need to enter a readme name!');
+                    console.log('You need to enter why you built this!');
                     return false;
                 }
             }
@@ -67,11 +67,11 @@ const questions = () => {
             type: "input",
             name: "problemSolving",
             message: "What problems does this project solve? (Required)",
-            validate: readmeTitleInput => {
-                if (readmeTitleInput) {
+            validate: problemSolving => {
+                if (problemSolving) {
                     return true;
                 } else {
-                    console.log('You need to enter a readme name!');
+                    console.log('You need to enter the problems solved!');
                     return false;
                 }
             }
@@ -80,39 +80,37 @@ const questions = () => {
             type: "input",
             name: "learningCurve",
             message: "What problems did you encounter and how did you overcome them? (Required)",
-            validate: readmeTitleInput => {
-                if (readmeTitleInput) {
+            validate: learningCurve => {
+                if (learningCurve) {
                     return true;
                 } else {
-                    console.log('You need to enter a readme name!');
+                    console.log('You need to enter the problems you encountered!');
                     return false;
                 }
             }
-        } /* end bullet points for description */,
-        {
+        },
+        /* {
             type: "input",
             name: "contentTable",
             message: "Please enter a table of contents. (Required)",
-            validate: readmeTitleInput => {
-                if (readmeTitleInput) {
+            validate: contentTable => {
+                if (contentTable) {
                     return true;
                 } else {
-                    console.log('You need to enter a readme name!');
+                    console.log('You need to enter a content table!');
                     return false;
                 }
-
-                /* make this a optional question / use confirm to determine if this is wanted? */
             }
-        },
+        }, */
         {
             type: "input",
             name: "installInstructions",
             message: "Please type a brief instruction on how to install the project. (Required)",
-            validate: readmeTitleInput => {
-                if (readmeTitleInput) {
+            validate: installInstructions => {
+                if (installInstructions) {
                     return true;
                 } else {
-                    console.log('You need to enter a readme name!');
+                    console.log('You need to enter some install instructions!');
                     return false;
                 }
             }
@@ -121,11 +119,11 @@ const questions = () => {
             type: "input",
             name: "usage",
             message: "Please profive a brief instruction for how to use the project. (Required)",
-            validate: readmeTitleInput => {
-                if (readmeTitleInput) {
+            validate: usage => {
+                if (usage) {
                     return true;
                 } else {
-                    console.log('You need to enter a readme name!');
+                    console.log('You need to enter some usage instructions!');
                     return false;
                 }
             }
@@ -133,46 +131,37 @@ const questions = () => {
         {
             type: "input",
             name: "credits",
-            message: "Please provide a brief list of your collaborators or teammembers. Also list any outside source help. (Required)",
-            validate: readmeTitleInput => {
-                if (readmeTitleInput) {
+            message: "Please provide a brief list of your collaborators or teammembers. Also list any outside source help. If none list N/A. (Required)",
+            validate: credits => {
+                if (credits) {
                     return true;
                 } else {
-                    console.log('You need to enter a readme name!');
+                    console.log('You need to enter your credits!');
                     return false;
                 }
-                /* add a confirm to determine if this is wanted? */
             }
         },
         {
             type: "list",
             name: "license",
             message: "choose a license. (Required)",
-            choices: ["MIT", "Eclipse"]
+            choices: ['MIT', 'Eclipse', 'Mozilla', 'ODBL', 'PERL']
         },
         {
-            type: "list",
+            type: "checkbox",
             name: "features",
             message: "list the features of your project. (Required)",
             choices: ["HTML", "CSS", "JS", "Node", "ES6", "Bootstrap", "JQuery"],
-            validate: readmeTitleInput => {
-                if (readmeTitleInput) {
-                    return true;
-                } else {
-                    console.log('You need to enter a readme name!');
-                    return false;
-                }
-            }
         },
         {
             type: "input",
             name: "contributionCapability",
             message: "List the ways other developers could contribute to your project. (Required)",
-            validate: readmeTitleInput => {
-                if (readmeTitleInput) {
+            validate: contributionCapability => {
+                if (contributionCapability) {
                     return true;
                 } else {
-                    console.log('You need to enter a readme name!');
+                    console.log('You need to enter your helpers!');
                     return false;
                 }
             }
@@ -181,15 +170,28 @@ const questions = () => {
             type: "input",
             name: "futureTests",
             message: "Provide a brief list of how others can test the project. (Required)",
-            validate: readmeTitleInput => {
-                if (readmeTitleInput) {
+            validate: futureTests => {
+                if (futureTests) {
                     return true;
                 } else {
-                    console.log('You need to enter a readme name!');
+                    console.log('You need to enter some test methods!');
                     return false;
                 }
             }
         },
+        {
+            type: "input",
+            name: "furtherInquiries",
+            message: "Please provide your github username for others to be able to contact you with questions. (Required)",
+            validate: furtherInquiries => {
+                if (furtherInquiries) {
+                    return true;
+                } else {
+                    console.log('You need to enter your github name!');
+                    return false;
+                }
+            }
+        }
     ])
 };
 
