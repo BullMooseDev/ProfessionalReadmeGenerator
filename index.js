@@ -185,10 +185,23 @@ const questions = () => {
         },
         {
             type: "input",
-            name: "furtherInquiries",
+            name: "githubName",
             message: "Please provide your github username for others to be able to contact you with questions. (Required)",
-            validate: furtherInquiries => {
-                if (furtherInquiries) {
+            validate: githubName => {
+                if (githubName) {
+                    return true;
+                } else {
+                    console.log('You need to enter your github name!');
+                    return false;
+                }
+            }
+        },
+        {
+            type: "input",
+            name: "email",
+            message: "Please provide your email for others to be able to contact you with questions. (Required)",
+            validate: email => {
+                if (email) {
                     return true;
                 } else {
                     console.log('You need to enter your github name!');

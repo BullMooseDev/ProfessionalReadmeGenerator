@@ -26,10 +26,10 @@ kole
 kole
 
 ## License
-No license selected.
+
 
 ## Features
-HTML,CSS,JS,Node
+HTML
 
 ## Contributions
 kole
@@ -39,3 +39,4 @@ kole
 
 ## Questions
 If you have any questions, comments or concerns please click [here!](https://github.com/kole)
+Or, alternatively you can contact me via [email](kole).
