@@ -89,19 +89,6 @@ const questions = () => {
                 }
             }
         },
-        /* {
-            type: "input",
-            name: "contentTable",
-            message: "Please enter a table of contents. (Required)",
-            validate: contentTable => {
-                if (contentTable) {
-                    return true;
-                } else {
-                    console.log('You need to enter a content table!');
-                    return false;
-                }
-            }
-        }, */
         {
             type: "input",
             name: "installInstructions",
@@ -142,16 +129,33 @@ const questions = () => {
             }
         },
         {
-            type: "list",
+            type: "checkbox",
             name: "license",
             message: "choose a license. (Required)",
-            choices: ['MIT', 'Eclipse', 'Mozilla', 'ODBL', 'PERL']
+            choices: ['MIT', 'Eclipse', 'Mozilla', 'ODBL', 'PERL'],
+            validate: license => {
+                if (license) {
+                    return true;
+                } else {
+                    console.log('You need to enter a license!');
+                    return false;
+                }
+                /* checkbox might not work may have to use list for sumbission */
+        }
         },
         {
             type: "checkbox",
             name: "features",
             message: "list the features of your project. (Required)",
             choices: ["HTML", "CSS", "JS", "Node", "ES6", "Bootstrap", "JQuery"],
+            validate: features => {
+                if (features) {
+                    return true;
+                } else {
+                    console.log('You need to enter your features!');
+                    return false;
+                }
+        }
         },
         {
             type: "input",

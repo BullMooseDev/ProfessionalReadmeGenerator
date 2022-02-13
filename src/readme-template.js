@@ -1,7 +1,7 @@
 const generateReadme = require('../dist/utils/generate-readme');
 
 const reamdeTemplate = questionData => {
-    let licenseSection = "No license selected."
+    let licenseSection = "No license/s selected."
 
     if(questionData.license == "MIT") {
         licenseSection = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
@@ -21,16 +21,16 @@ const reamdeTemplate = questionData => {
 - ${questionData.motivation}
 - ${questionData.theBigWhy}
 - ${questionData.problemSolving}
-${questionData.learningCurve}
+- ${questionData.learningCurve}
 
 ## Table of Contents
-[Installation](#Installation Instructions)
-[Usage](#Usage)
-[Credits](#Credits)
-[Licensing](#License)
-[Features](#Features)
-[Contributions](#Contributions)
-[Testing](#Future Testing)
+[Installation](##Installation)
+[Usage](##Usage)
+[Credits](##Credits)
+[Licensing](##License)
+[Features](##Features)
+[Contributions](##Contributions)
+[Testing](##Future)
 
 ## Installation Instructions
 ${questionData.installInstructions}

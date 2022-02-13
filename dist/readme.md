@@ -5,16 +5,16 @@
 - kole
 - kole
 - kole
-kole
+- kole
 
 ## Table of Contents
-[Installation](#Installation Instructions)
-[Usage](#Usage)
-[Credits](#Credits)
-[Licensing](#License)
-[Features](#Features)
-[Contributions](#Contributions)
-[Testing](#Future Testing)
+[Installation](##Installation)
+[Usage](##Usage)
+[Credits](##Credits)
+[Licensing](##License)
+[Features](##Features)
+[Contributions](##Contributions)
+[Testing](##Future)
 
 ## Installation Instructions
 kole
@@ -29,7 +29,7 @@ kole
 No license selected.
 
 ## Features
-
+HTML,CSS,JS,Node
 
 ## Contributions
 kole
