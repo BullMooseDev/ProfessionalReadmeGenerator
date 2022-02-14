@@ -214,7 +214,7 @@ const questions = () => {
 
 // TODO: Create a function to write README file
 function writeToFile(readmeFile) {
-    fs.writeFile("./dist/README.md", readmeFile, (err) => {
+    fs.writeFile("./README.md", readmeFile, (err) => {
         if (err) {
             console.log(err);
             return;

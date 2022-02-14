@@ -1,4 +1,4 @@
-const generateReadme = require('../dist/utils/generate-readme');
+const generateReadme = require('../utils/generate-readme');
 
 const reamdeTemplate = questionData => {
 
@@ -75,20 +75,3 @@ Or, alternatively you can contact me via [email](${questionData.email}).
 };
 
 module.exports = reamdeTemplate;
-
-
-
-
-/*     let licenseSection = "No license/s selected.";
-
-    if(questionData.license == "MIT") {
-        licenseSection = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
-    } if (questionData.license == 'Eclipse') {
-        licenseSection = '[![License](https://img.shields.io/badge/License-EPL_1.0-red.svg)](https://opensource.org/licenses/EPL-1.0)'
-    } if (questionData.license == 'Mozilla') {
-        licenseSection = '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)'
-    } if (questionData.license == 'ODBL') {
-        licenseSection = '[![License: ODbL](https://img.shields.io/badge/License-ODbL-brightgreen.svg)](https://opendatacommons.org/licenses/odbl/)'
-    } if (questionData.license == 'PERL') {
-        licenseSection = '[![License: Artistic-2.0](https://img.shields.io/badge/License-Perl-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)'
-    } */
