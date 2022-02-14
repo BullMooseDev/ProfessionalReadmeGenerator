@@ -1,11 +1,11 @@
-# kole
+# a
 
 ## Description
-- kole
-- kole
-- kole
-- kole
-- kole
+- a
+- a
+- a
+- a
+- a
 
 ## Table of Contents
 [Installation](##Installation)
@@ -17,26 +17,26 @@
 [Testing](##Future)
 
 ## Installation Instructions
-kole
+a
 
 ## Usage
-kole
+a
 
 ## Credits
-kole
+a
 
 ## License
-
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT),[![License](https://img.shields.io/badge/License-EPL_1.0-red.svg)](https://opensource.org/licenses/EPL-1.0),[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0),[![License: ODbL](https://img.shields.io/badge/License-ODbL-brightgreen.svg)](https://opendatacommons.org/licenses/odbl/)
 
 ## Features
 HTML
 
 ## Contributions
-kole
+a
 
 ## Future Testing
-kole
+a
 
 ## Questions
-If you have any questions, comments or concerns please click [here!](https://github.com/kole)
-Or, alternatively you can contact me via [email](kole).
+If you have any questions, comments or concerns please click [here!](https://github.com/a)
+Or, alternatively you can contact me via [email](a).

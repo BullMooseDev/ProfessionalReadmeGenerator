@@ -1,28 +1,35 @@
 const generateReadme = require('../dist/utils/generate-readme');
 
-function generateLicense(licenseArr) {
-    let finalLicense = '';
-   
-    for (i = 0; i< licenseArr; i++) {
-
-        if(licenseArr[i] == "MIT") {
-            licenseSection = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
-        } if (licenseArr[i] == 'Eclipse') {
-            licenseSection = '[![License](https://img.shields.io/badge/License-EPL_1.0-red.svg)](https://opensource.org/licenses/EPL-1.0)'
-        } if (licenseArr[i] == 'Mozilla') {
-            licenseSection = '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)'
-        } if (licenseArr[i] == 'ODBL') {
-            licenseSection = '[![License: ODbL](https://img.shields.io/badge/License-ODbL-brightgreen.svg)](https://opendatacommons.org/licenses/odbl/)'
-        } if (licenseArr[i] == 'PERL') {
-            licenseSection = '[![License: Artistic-2.0](https://img.shields.io/badge/License-Perl-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)'
-        };
-     };
-    return finalLicense
-   };
-
 const reamdeTemplate = questionData => {
 
-return `# ${questionData.readmeTitle}
+    licenseArr = questionData.license;
+
+    function generateLicense(licenseArr) {
+
+        let licenseSection = []
+
+        let finalLicense = '';
+
+        for (i = 0; i < licenseArr.length; i++) {
+
+            if (licenseArr[i] == "MIT") {
+                licenseSection.push("[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)")
+            } if (licenseArr[i] == 'Eclipse') {
+                licenseSection.push('[![License](https://img.shields.io/badge/License-EPL_1.0-red.svg)](https://opensource.org/licenses/EPL-1.0)')
+            } if (licenseArr[i] == 'Mozilla') {
+                licenseSection.push('[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)')
+            } if (licenseArr[i] == 'ODBL') {
+                licenseSection.push('[![License: ODbL](https://img.shields.io/badge/License-ODbL-brightgreen.svg)](https://opendatacommons.org/licenses/odbl/)')
+            } if (licenseArr[i] == 'PERL') {
+                licenseSection.push('[![License: Artistic-2.0](https://img.shields.io/badge/License-Perl-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)')
+            };
+            licenseSection.join(' ');
+            finalLicense = licenseSection;
+        };
+        return finalLicense
+    };
+
+    return `# ${questionData.readmeTitle}
 
 ## Description
 - ${questionData.description}
