@@ -23,9 +23,9 @@ const reamdeTemplate = questionData => {
             } if (licenseArr[i] == 'PERL') {
                 licenseSection.push('[![License: Artistic-2.0](https://img.shields.io/badge/License-Perl-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)')
             };
-            licenseSection.join(' ');
-            finalLicense = licenseSection;
         };
+        licenseSection = licenseSection.join(' ');
+        finalLicense = licenseSection;
         return finalLicense
     };
 
@@ -39,13 +39,13 @@ const reamdeTemplate = questionData => {
 - ${questionData.learningCurve}
 
 ## Table of Contents
-[Installation](##Installation)
-[Usage](##Usage)
-[Credits](##Credits)
-[Licensing](##License)
-[Features](##Features)
-[Contributions](##Contributions)
-[Testing](##Future)
+[Installation Instructions](#Installation-Instructions)
+[Usage](#Usage)
+[Credits](#Credits)
+[Licensing](#License)
+[Features](#Features)
+[Contributions](#Contributions)
+[Testing](#Future-Testing)
 
 ## Installation Instructions
 ${questionData.installInstructions}

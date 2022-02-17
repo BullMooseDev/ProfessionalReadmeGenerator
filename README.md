@@ -1,44 +1,42 @@
-# title of readme
+# this is a title
 
 ## Description
-- description of readme and project
+- here is a description of the project
 - motivation
-- building reasons
-- problems solved
-- encountering issues and overcoming them
+- why did i build this
+- what does this solve
+- overcoming problems
 
 ## Table of Contents
-[Installation](##Installation)
-[Usage](##Usage)
-[Credits](##Credits)
-[Licensing](##License)
-[Features](##Features)
-[Contributions](##Contributions)
-[Testing](##Future)
+[Installation Instructions](#Installation-Instructions)
+[Usage](#Usage)
+[Credits](#Credits)
+[Licensing](#License)
+[Features](#Features)
+[Contributions](#Contributions)
+[Testing](#Future-Testing)
 
 ## Installation Instructions
-installation
+instructions for installation
 
 ## Usage
-how to use
+how to use the project
 
 ## Credits
-collabs
+collaborators
 
 ## License
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT),[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0),[![License: Artistic-2.0](https://img.shields.io/badge/License-Perl-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![License](https://img.shields.io/badge/License-EPL_1.0-red.svg)](https://opensource.org/licenses/EPL-1.0) [![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
 
 ## Features
-JS,Node,ES6
+HTML,CSS,JS
 
 ## Contributions
-dev contributions
+devs and contribution
 
 ## Future Testing
 testing
 
 ## Questions
-If you have any questions, comments or concerns please click [here!](https://github.com/bullmoosedev)
-Or, alternatively you can contact me via [email](email.email@email.com).
-
-![image](./images/readmechallange.gif)
+If you have any questions, comments or concerns please click [here!](https://github.com/github)
+Or, alternatively you can contact me via [email](email).
